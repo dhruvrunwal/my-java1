@@ -5,10 +5,15 @@ public class Factorial {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int num = sc.nextInt();
-        long fact = 1;
-        for (int i = 1; i <= num; i++) {
-            fact *= i;
+
+        int result = factorial(num);
+        System.out.println("Factorial of " + num + " is: " + result);
+    }
+
+    public static int factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
         }
-        System.out.println("Factorial: " + fact);
+        return n * factorial(n - 1);
     }
 }
