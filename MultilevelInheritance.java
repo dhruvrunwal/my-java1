@@ -19,7 +19,7 @@ class Dog extends Mammal {
 public class MultilevelInheritance {
     public static void main(String[] args) {
         Dog d = new Dog();
-        d.sound();   // Calls Dog's sound method
-        d.breathe(); // Inherited from Mammal
+        d.sound();   
+        d.breathe(); 
     }
 }
