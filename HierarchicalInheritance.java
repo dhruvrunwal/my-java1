@@ -21,7 +21,7 @@ public class HierarchicalInheritance {
         Dog d = new Dog();
         Cat c = new Cat();
 
-        d.sound(); // Calls Dog's sound method
-        c.sound(); // Calls Cat's sound method
+        d.sound(); 
+        c.sound();
     }
 }
